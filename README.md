@@ -16,11 +16,10 @@ on the following libraries:
     * git clone http://github.com/yui/yui3-gallery
 
 ## Instructions
-
-1.) Copy the YUI and YUI Gallery libraries into your Scripts folder
-2.) Create a Model and Decorate for View Builder
-3.) Bind Repositories
-4.) Implement a "CrudController"; Controller names must be pluralized (i.e. MyModel -> MyModelsController)
+1. Copy the YUI and YUI Gallery libraries into your Scripts folder
+2. Create a Model and Decorate for View Builder
+3. Bind Repositories
+4. Implement a "CrudController"; Controller names must be pluralized (i.e. MyModel -> MyModelsController)
 
 ## CI build status
 [![Build Status](https://www.myget.org/BuildSource/Badge/psns-common?identifier=f0e76bb8-c348-4071-b39d-8b6a193dcbcf)](https://www.myget.org/)
