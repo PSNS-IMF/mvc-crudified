@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Psns.Common.Persistence.EntityFramework</name>
+    </assembly>
+    <members>
+        <member name="T:Psns.Common.Persistence.EntityFramework.Extensions">
+            <summary>
+            Some extension methods
+            </summary>
+        </member>
+        <member name="M:Psns.Common.Persistence.EntityFramework.Extensions.GetEnumerableProperties(System.Object)">
+            <summary>
+            Get all properties of the object that implement IEnumerable
+            </summary>
+            <param name="obj">this object</param>
+            <returns>The PropertyInfos that implement IEnumerable</returns>
+        </member>
+        <member name="M:Psns.Common.Persistence.EntityFramework.Extensions.IncludeMany``1(System.Linq.IQueryable{``0},System.String[])">
+            <summary>
+            Calls IQueryable.Include on multiple string values
+            </summary>
+            <typeparam name="T">T in context</typeparam>
+            <param name="query">this IQueryable</param>
+            <param name="includes">String parameters in be included</param>
+            <returns>The IQueryable containing all includes</returns>
+        </member>
+        <member name="T:Psns.Common.Persistence.EntityFramework.IContext">
+            <summary>
+            Defines extra re-direction methods for DbContext
+            </summary>
+        </member>
+        <member name="M:Psns.Common.Persistence.EntityFramework.IContext.SetModified(System.Object,System.Object)">
+            <summary>
+            Definies a method to set the modified state of an Entry
+            </summary>
+            <param name="entity">The entity to modify</param>
+            <param name="updated">The entity containing updated values</param>
+        </member>
+        <member name="T:Psns.Common.Persistence.EntityFramework.Context">
+            <summary>
+            An abstract implementation of IContext
+            </summary>
+        </member>
+        <member name="M:Psns.Common.Persistence.EntityFramework.Context.SetModified(System.Object,System.Object)">
+            <summary>
+            Sets Entry.State to EntityState.Modified
+            </summary>
+            <param name="entity">The entity to modify</param>
+            <param name="updated">The entity containing updated values</param>
+        </member>
+        <member name="T:Psns.Common.Persistence.EntityFramework.RelationshipLoaderAdapter">
+            <summary>
+            Provides a level of indirection for loading navigation properties to support loose coupling
+            </summary>
+        </member>
+        <member name="F:Psns.Common.Persistence.EntityFramework.RelationshipLoaderAdapter.LoadFunction">
+            <summary>
+            The function called to load a list of properties
+            </summary>
+        </member>
+        <member name="M:Psns.Common.Persistence.EntityFramework.RelationshipLoaderAdapter.Load(System.Data.Entity.DbContext,System.Object,System.String[])">
+            <summary>
+            Calls the LoadFunction; if null, then DbEntityEntry.[MemberEntryType].Load will be called.
+            </summary>
+            <param name="context">The DbContext</param>
+            <param name="entity">The entity whose properties will be loaded</param>
+            <param name="includes">The list of properties to load</param>
+        </member>
+        <member name="T:Psns.Common.Persistence.EntityFramework.Repository`1">
+            <summary>
+            An implementation of IRepository for Entity Framework
+            </summary>
+            <typeparam name="T">A reference type</typeparam>
+        </member>
+        <member name="F:Psns.Common.Persistence.EntityFramework.Repository`1._dbContext">
+            <summary>
+            The DbContext being used for all actions
+            </summary>
+        </member>
+        <member name="M:Psns.Common.Persistence.EntityFramework.Repository`1.#ctor(System.Data.Entity.DbContext)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="dbContext">The DbContext for the project</param>
+            <exception cref="T:System.InvalidOperationException">When dbContext doesn't implement IContext</exception>
+        </member>
+        <member name="M:Psns.Common.Persistence.EntityFramework.Repository`1.All(System.String[])">
+            <summary>
+            Get all entities of type T as an untracked list
+            </summary>
+            <param name="includes">Property names to be included</param>
+            <returns>An IEnumerable of all of the entities</returns>
+        </member>
+        <member name="M:Psns.Common.Persistence.EntityFramework.Repository`1.Create(`0)">
+            <summary>
+            Add a new entity to DbContext
+            </summary>
+            <param name="entity">The entity to be added</param>
+            <returns>The newly created entity</returns>
+        </member>
+        <member name="M:Psns.Common.Persistence.EntityFramework.Repository`1.Update(`0,System.String[])">
+            <summary>
+            Update the given entity in DbContext
+            </summary>
+            <param name="entity">The entity containing updated property</param>
+            <param name="includes">The complex properties that should be included in the Update</param>
+            <returns>The entity containing updates</returns>
+            <exception cref="T:System.InvalidOperationException">When the entity doesn't have a keyed property (i.e. an integer Id or a property with the KeyAttribute)</exception>
+            <exception cref="T:System.InvalidOperationException">When the existing entity can't be found by using the key</exception>
+            <exception cref="T:System.InvalidOperationException">If the included collection property of the entity doesn't implement Add or Remove</exception>
+        </member>
+        <member name="M:Psns.Common.Persistence.EntityFramework.Repository`1.Find(System.Object[])">
+            <summary>
+            Find a single entity
+            </summary>
+            <param name="keyValues">Key values to be used in the search</param>
+            <returns>The found entity or null</returns>
+        </member>
+        <member name="M:Psns.Common.Persistence.EntityFramework.Repository`1.Find(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.String[])">
+            <summary>
+            Find all entities that match the given predicate
+            </summary>
+            <param name="predicate">The predicate query</param>
+            <param name="includes">The properties to be included in the results</param>
+            <returns>The list of matching entites</returns>
+        </member>
+        <member name="M:Psns.Common.Persistence.EntityFramework.Repository`1.Delete(`0)">
+            <summary>
+            Remove the entity from DbContext
+            </summary>
+            <param name="entity">The entity to be removed</param>
+            <returns>The removed entity</returns>
+        </member>
+        <member name="M:Psns.Common.Persistence.EntityFramework.Repository`1.SaveChanges">
+            <summary>
+            Calls DbContext.SaveChanges
+            </summary>
+            <returns>The count of entities modified</returns>
+        </member>
+        <member name="M:Psns.Common.Persistence.EntityFramework.Repository`1.Finalize">
+            <summary>
+            Destructor
+            </summary>
+        </member>
+        <member name="M:Psns.Common.Persistence.EntityFramework.Repository`1.Dispose">
+            <summary>
+            Disposes of the underlying DbContext
+            </summary>
+        </member>
+        <member name="M:Psns.Common.Persistence.EntityFramework.Repository`1.Dispose(System.Boolean)">
+            <summary>
+            Disposes of the underlying DbContext
+            </summary>
+            <param name="disposing"></param>
+        </member>
+    </members>
+</doc>

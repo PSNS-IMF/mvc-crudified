@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Psns.Common.Mvc.Crudified</id>
+    <title>Psns Crudified Mvc</title>
+    <authors>Jeff Purcell</authors>
+    <owners>109.14</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Adds built-in CRUD functionality to existing Asp.Net Mvc applications</description>
+    <projectUrl>https://github.com/PSNS-IMF/mvc-crudified</projectUrl>
+    <licenseUrl>https://github.com/PSNS-IMF/mvc-crudified/blob/master/LICENSE.md</licenseUrl>
+    <tags>PSNS mvc4 mvc5 asp.net mvc AspNetMvc theme automation crud</tags>
+    <releaseNotes>
+      ## 1.1.0.1
+      ### Features
+      * Moved Menu view models into ViewBuilding module.
+
+      ## 1.1.0.0
+      ### Features
+      * Removing dependency on Psns.Mvc.Skin.
+
+      ## 1.0.0.7
+      ### Features
+      * Moved view building into separate module.
+
+      ## 1.0.0.6
+      ### Features
+      * Adding support for .NET 4.5
+
+      ## 1.0.0.5
+      ### Bug Fix
+      * Fixes issues with issuing includes to Repository actions when needed.
+      * Moved IIdentifiable definitions to Persistence Defs.
+
+      ## 1.0.0.3
+      ### Bug Fix
+      * Fixed Save on Update view to pass Id when provided.
+
+      ## 1.0.0.2
+      ### Bug Fix
+      * IUpdatable should call repository create for new models.
+
+      ## 1.0.0.1
+      ### Bug Fix
+      * IDeletable and IUpdatable should call Repository.SaveChanges when modification is complete.
+
+      ## 1.0.0.0
+      ### Features
+      * Initial Release
+    </releaseNotes>
+    <version>$version$</version>
+    <dependencies>
+      <group targetFramework="net40">
+        <dependency id="Psns.Common.Configuration" version="" />
+        <dependency id="Psns.Common.Javascript.Yui3" version="" />
+        <dependency id="Psns.Common.Mvc.ViewBuilding" version="" />
+        <dependency id="Psns.Common.Persistence.Definitions" version="1.0.3.0" />
+        <dependency id="Psns.Common.Web.Adapters" version="1.0.0.2" />
+        <dependency id="Microsoft.AspNet.Web.Optimization" version="1.1.3" />
+        <dependency id="Microsoft.AspNet.Mvc" version="4.0.40804.0" />
+        <dependency id="WebActivatorEx" version="2.0.6" />
+      </group>
+      <group targetFramework="net45">
+        <dependency id="Psns.Common.Configuration" version="" />
+        <dependency id="Psns.Common.Javascript.Yui3" version="" />
+        <dependency id="Psns.Common.Mvc.ViewBuilding" version="" />
+        <dependency id="Psns.Common.Persistence.Definitions" version="1.0.3.0" />
+        <dependency id="Psns.Common.Web.Adapters" version="1.0.0.2" />
+        <dependency id="Microsoft.AspNet.WebApi.WebHost" version="5.2.3" />
+        <dependency id="Microsoft.AspNet.Web.Optimization" version="1.1.3" />
+        <dependency id="Microsoft.AspNet.Mvc" version="5.2.3" />
+        <dependency id="WebActivatorEx" version="2.0.6" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="nuget\readme.txt" target="" />
+    <file src="nuget\content\**\*.*" target="content" />
+    <file src="..\bin\$configuration$\Psns.Common.Mvc.Crudified.*" target="lib\net40\" />
+    <file src="..\bin\$configuration$\net45\Psns.Common.Mvc.Crudified.*" target="lib\net45\" />
+    <file src="Content\**\*.*" target="content\Content" />
+    <file src="Scripts\Shared\**\*.*" target="content\Scripts\Shared" />
+    <file src="Views\_ViewStart.cshtml" target="content\Views" />
+    <file src="Views\Shared\**\*.*" target="content\Views\Shared" />
+  </files>
+</package>

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Psns.Common.Configuration</name>
+    </assembly>
+    <members>
+        <member name="T:Psns.Common.Configuration.AppEnvironment">
+            <summary>
+            Represents each of the Application run environments
+            </summary>
+        </member>
+        <member name="T:Psns.Common.Configuration.IAppEnvironmentReader">
+            <summary>
+            Determines the current Environment
+            </summary>
+        </member>
+        <member name="P:Psns.Common.Configuration.IAppEnvironmentReader.Current">
+            <summary>
+            The current runtime Environment
+            </summary>
+        </member>
+        <member name="T:Psns.Common.Configuration.AppEnvironmentReader">
+            <summary>
+            Determines the current running Environment based on AppSetting key in .config file
+            </summary>
+        </member>
+        <member name="P:Psns.Common.Configuration.AppEnvironmentReader.Current">
+            <summary>
+            The current running Evironment based on AppSetting key in .config file
+            </summary>
+            <exception cref="T:System.InvalidOperationException">Thrown if Environment key is missing, or doesn't contain a valid AppEnvironemnt</exception>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrudifiedMvc.View", "src\CrudifiedMvc.View\CrudifiedMvc.View.csproj", "{282559B3-CC5D-42C1-BA59-1E217C06EF95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crudified", "src\CrudifiedMvc.Domain\Crudified.csproj", "{E8A22AE8-BE84-4D68-AC59-C0C42F4B8A7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crudified.UnitTests", "test\CrudifiedMvc.UnitTests\Crudified.UnitTests.csproj", "{6EC701E0-9F36-4D3C-BBBE-0773F5EC3AFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crudified.JavascriptTests", "test\CrudifiedMvc.JavascriptTests\Crudified.JavascriptTests.csproj", "{CD9D4CB9-E0B9-4798-AE5E-B952D26FBECA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{F259ED84-A390-4765-8ECD-6D18493AC407}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{41A5C594-80B2-4FA1-AF3C-341B4A5707AA}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		45Build.proj = 45Build.proj
+		build.bat = build.bat
+		Build.proj = Build.proj
+		LICENSE.md = LICENSE.md
+		README.md = README.md
+		Todo.txt = Todo.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9A6160EB-9A35-44CC-9DAA-FAF9964B0BCC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{067CC25C-B4EA-420B-A2AA-F21C434219B6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{282559B3-CC5D-42C1-BA59-1E217C06EF95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{282559B3-CC5D-42C1-BA59-1E217C06EF95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{282559B3-CC5D-42C1-BA59-1E217C06EF95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{282559B3-CC5D-42C1-BA59-1E217C06EF95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8A22AE8-BE84-4D68-AC59-C0C42F4B8A7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8A22AE8-BE84-4D68-AC59-C0C42F4B8A7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8A22AE8-BE84-4D68-AC59-C0C42F4B8A7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8A22AE8-BE84-4D68-AC59-C0C42F4B8A7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EC701E0-9F36-4D3C-BBBE-0773F5EC3AFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EC701E0-9F36-4D3C-BBBE-0773F5EC3AFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EC701E0-9F36-4D3C-BBBE-0773F5EC3AFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EC701E0-9F36-4D3C-BBBE-0773F5EC3AFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD9D4CB9-E0B9-4798-AE5E-B952D26FBECA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD9D4CB9-E0B9-4798-AE5E-B952D26FBECA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD9D4CB9-E0B9-4798-AE5E-B952D26FBECA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD9D4CB9-E0B9-4798-AE5E-B952D26FBECA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E8A22AE8-BE84-4D68-AC59-C0C42F4B8A7F} = {9A6160EB-9A35-44CC-9DAA-FAF9964B0BCC}
+		{282559B3-CC5D-42C1-BA59-1E217C06EF95} = {9A6160EB-9A35-44CC-9DAA-FAF9964B0BCC}
+		{CD9D4CB9-E0B9-4798-AE5E-B952D26FBECA} = {067CC25C-B4EA-420B-A2AA-F21C434219B6}
+		{6EC701E0-9F36-4D3C-BBBE-0773F5EC3AFD} = {067CC25C-B4EA-420B-A2AA-F21C434219B6}
+	EndGlobalSection
+EndGlobal

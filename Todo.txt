@@ -1,0 +1,23 @@
+Index View
+	+ Add new Entity - Keith
+	+ Search
+	+ Paging (specify which page, first, and last)
+	Scale Filter Drop Down Menus
+
++ Update View
+	+ Complex Properties (Single and Multiselect)
+	+ Complex Model binding
+
++ Unit Test CrudController Methods
+
++ Repository
+	 + Implement for EF in new Module
+	 + Integrate with CrudController
+	 + Test with EF implementation
+
+Permissions Layer
+	Domain Decoration
+	View Builder Integration
+	Controller Integration
+
+Complete XML Documentation
