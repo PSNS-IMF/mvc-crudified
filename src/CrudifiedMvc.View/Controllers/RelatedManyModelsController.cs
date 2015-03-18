@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 
 using Psns.Common.Mvc.ViewBuilding.ViewBuilders;
-using Psns.Common.Mvc.Crudified.Controllers;
+using Psns.Common.Mvc.ViewBuilding.Controllers;
 
 using Psns.Common.Persistence.Definitions;
 using CrudifiedMvc.View.Models;

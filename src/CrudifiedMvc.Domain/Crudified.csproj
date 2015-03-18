@@ -59,9 +59,9 @@
     <Reference Include="Psns.Common.Configuration">
       <HintPath>..\..\packages\Psns.Common.Configuration.1.0.0.1\lib\net40\Psns.Common.Configuration.dll</HintPath>
     </Reference>
-    <Reference Include="Psns.Common.Mvc.ViewBuilding, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Psns.Common.Mvc.ViewBuilding, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Psns.Common.Mvc.ViewBuilding.3.0.0-rc1\lib\net40\Psns.Common.Mvc.ViewBuilding.dll</HintPath>
+      <HintPath>..\..\packages\Psns.Common.Mvc.ViewBuilding.4.1.0-rc2\lib\net40\Psns.Common.Mvc.ViewBuilding.dll</HintPath>
     </Reference>
     <Reference Include="Psns.Common.Persistence.Definitions, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -131,13 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Infrastructure\BundleConfig.cs" />
-    <Compile Include="Controllers\IBaseController.cs" />
-    <Compile Include="Controllers\IDeleteable.cs" />
-    <Compile Include="Controllers\IUpdatable.cs" />
-    <Compile Include="Controllers\IDetailable.cs" />
-    <Compile Include="Controllers\IIndexable.cs" />
     <Compile Include="Controllers\IndexController.cs" />
-    <Compile Include="Controllers\CrudController.cs" />
     <Compile Include="Controllers\IndexViewController.cs" />
     <Compile Include="Helpers\HtmlExtensions.cs" />
     <Compile Include="Infrastructure\CrudifiedNinjectModule.cs" />
