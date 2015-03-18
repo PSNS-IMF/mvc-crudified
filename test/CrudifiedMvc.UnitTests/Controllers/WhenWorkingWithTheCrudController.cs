@@ -66,7 +66,7 @@ namespace CrudifiedMvc.UnitTests.Controllers.Crud
                 It.IsAny<IEnumerable<string>>(),
                 It.IsAny<IEnumerable<string>>(),
                 It.IsAny<string>(),
-                It.IsAny<ITableVisitor[]>()
+                It.IsAny<IIndexViewVisitor[]>()
             ))
                 .Returns(new IndexView(typeof(TestEntity).Name));
         }

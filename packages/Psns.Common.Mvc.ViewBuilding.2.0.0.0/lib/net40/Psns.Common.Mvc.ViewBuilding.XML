@@ -4,16 +4,6 @@
         <name>Psns.Common.Mvc.ViewBuilding</name>
     </assembly>
     <members>
-        <member name="T:Psns.Common.Mvc.ViewBuilding.Adapters.RequestContextAdapter">
-            <summary>
-            An adapter for the HttpContext.Current.Request.RequestContext to assist with testing
-            </summary>
-        </member>
-        <member name="P:Psns.Common.Mvc.ViewBuilding.Adapters.RequestContextAdapter.Context">
-            <summary>
-            Unless explicitly set, HttpContext.Current.Request.RequestContext is returned
-            </summary>
-        </member>
         <member name="T:Psns.Common.Mvc.ViewBuilding.Attributes.InputPropertyType">
             <summary>
             Represents types of properties that will be displayed on an update view
@@ -114,6 +104,89 @@
             <summary>
             The Name of the INameable
             </summary>
+        </member>
+        <member name="T:Psns.Common.Mvc.ViewBuilding.Adapters.RequestContextAdapter">
+            <summary>
+            An adapter for the HttpContext.Current.Request.RequestContext to assist with testing
+            </summary>
+        </member>
+        <member name="P:Psns.Common.Mvc.ViewBuilding.Adapters.RequestContextAdapter.Context">
+            <summary>
+            Unless explicitly set, HttpContext.Current.Request.RequestContext is returned
+            </summary>
+        </member>
+        <member name="T:Psns.Common.Mvc.ViewBuilding.ViewModels.DetailsView">
+            <summary>
+            A View with a Table that is used for a typical details view page
+            </summary>
+        </member>
+        <member name="M:Psns.Common.Mvc.ViewBuilding.ViewModels.DetailsView.Accept(Psns.Common.Mvc.ViewBuilding.ViewModels.IDetailsViewVisitor)">
+            <summary>
+            Accept an IDetailsViewVisitor and pass it this
+            </summary>
+            <param name="visitor">IDetailsViewVisitor</param>
+        </member>
+        <member name="T:Psns.Common.Mvc.ViewBuilding.ViewModels.IDetailsViewVisitor">
+            <summary>
+            Defines a visitor for the DetailsView model
+            </summary>
+        </member>
+        <member name="T:Psns.Common.Mvc.ViewBuilding.ViewModels.TableModel.ITableVisitor">
+            <summary>
+            Defines a visitor for the Table view model
+            </summary>
+        </member>
+        <member name="M:Psns.Common.Mvc.ViewBuilding.ViewModels.TableModel.ITableVisitor.Visit(Psns.Common.Mvc.ViewBuilding.ViewModels.TableModel.Table)">
+            <summary>
+            Defines a method that visits the Table
+            </summary>
+            <param name="table">Table view model</param>
+        </member>
+        <member name="M:Psns.Common.Mvc.ViewBuilding.ViewModels.TableModel.ITableVisitor.Visit(Psns.Common.Mvc.ViewBuilding.ViewModels.TableModel.Row)">
+            <summary>
+            Defines a method that visits each Row of a Table
+            </summary>
+            <param name="row">A Row of the Table</param>
+        </member>
+        <member name="M:Psns.Common.Mvc.ViewBuilding.ViewModels.TableModel.ITableVisitor.Visit(Psns.Common.Mvc.ViewBuilding.ViewModels.TableModel.Column)">
+            <summary>
+            Defines a method that visits each Column of each Row of a Table
+            </summary>
+            <param name="column">A Column of a Row of a Table</param>
+        </member>
+        <member name="M:Psns.Common.Mvc.ViewBuilding.ViewModels.IDetailsViewVisitor.Visit(Psns.Common.Mvc.ViewBuilding.ViewModels.DetailsView)">
+            <summary>
+            Defines a method that receives the DetailsView being visited
+            </summary>
+            <param name="indexView">The DetailsView being visited</param>
+        </member>
+        <member name="T:Psns.Common.Mvc.ViewBuilding.ViewModels.IIndexViewVisitor">
+            <summary>
+            Defines a visitor for the IndexView model
+            </summary>
+        </member>
+        <member name="M:Psns.Common.Mvc.ViewBuilding.ViewModels.IIndexViewVisitor.Visit(Psns.Common.Mvc.ViewBuilding.ViewModels.IndexView)">
+            <summary>
+            Defines a method that receives the IndexView being visited
+            </summary>
+            <param name="indexView">The IndexView being visited</param>
+        </member>
+        <member name="T:Psns.Common.Mvc.ViewBuilding.ViewModels.IndexView">
+            <summary>
+            Contains the element for a common index view
+            </summary>
+        </member>
+        <member name="M:Psns.Common.Mvc.ViewBuilding.ViewModels.IndexView.#ctor(System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="modelName">The name of the model being represented in the index view</param>
+        </member>
+        <member name="M:Psns.Common.Mvc.ViewBuilding.ViewModels.IndexView.Accept(Psns.Common.Mvc.ViewBuilding.ViewModels.IIndexViewVisitor)">
+            <summary>
+            Accept an IIndexViewVisitor and pass it this
+            </summary>
+            <param name="visitor">IIndexViewVisitor</param>
         </member>
         <member name="T:Psns.Common.Mvc.ViewBuilding.Menu.GlobalMenu">
             <summary>
