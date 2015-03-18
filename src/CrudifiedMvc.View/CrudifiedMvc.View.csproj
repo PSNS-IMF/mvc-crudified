@@ -57,11 +57,11 @@
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\EntityFramework.6.1.2\lib\net40\EntityFramework.dll</HintPath>
+      <HintPath>..\..\packages\Psns.Common.Persistence.EntityFramework.1.0.0.3\lib\net40\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\EntityFramework.6.1.2\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\..\packages\Psns.Common.Persistence.EntityFramework.1.0.0.3\lib\net40\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -70,7 +70,7 @@
     </Reference>
     <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Ninject.3.2.2.0\lib\net40\Ninject.dll</HintPath>
+      <HintPath>..\..\packages\Psns.Common.Persistence.EntityFramework.1.0.0.3\lib\net40\Ninject.dll</HintPath>
     </Reference>
     <Reference Include="Ninject.Web.Common">
       <HintPath>..\..\packages\Ninject.Web.Common.3.2.0.0\lib\net40-full\Ninject.Web.Common.dll</HintPath>
@@ -85,17 +85,17 @@
     <Reference Include="Psns.Common.Mvc.DependencyInjection">
       <HintPath>..\..\packages\Psns.Common.Mvc.DependencyInjection.1.0.0.3\lib\net40\Psns.Common.Mvc.DependencyInjection.dll</HintPath>
     </Reference>
-    <Reference Include="Psns.Common.Mvc.ViewBuilding, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Psns.Common.Mvc.ViewBuilding, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Psns.Common.Mvc.ViewBuilding.2.0.0.0\lib\net40\Psns.Common.Mvc.ViewBuilding.dll</HintPath>
+      <HintPath>..\..\packages\Psns.Common.Mvc.ViewBuilding.3.0.0-rc1\lib\net40\Psns.Common.Mvc.ViewBuilding.dll</HintPath>
     </Reference>
     <Reference Include="Psns.Common.Persistence.Definitions, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Psns.Common.Persistence.Definitions.1.0.3.0\lib\net40\Psns.Common.Persistence.Definitions.dll</HintPath>
+      <HintPath>..\..\packages\Psns.Common.Persistence.EntityFramework.1.0.0.3\lib\net40\Psns.Common.Persistence.Definitions.dll</HintPath>
     </Reference>
-    <Reference Include="Psns.Common.Persistence.EntityFramework, Version=1.0.0.2, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Psns.Common.Persistence.EntityFramework, Version=1.0.0.3, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Psns.Common.Persistence.EntityFramework.1.0.0.2\lib\net40\Psns.Common.Persistence.EntityFramework.dll</HintPath>
+      <HintPath>..\..\packages\Psns.Common.Persistence.EntityFramework.1.0.0.3\lib\net40\Psns.Common.Persistence.EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />

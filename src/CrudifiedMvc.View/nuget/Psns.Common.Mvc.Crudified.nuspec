@@ -11,6 +11,10 @@
     <licenseUrl>https://github.com/PSNS-IMF/mvc-crudified/blob/master/LICENSE.md</licenseUrl>
     <tags>PSNS mvc4 mvc5 asp.net mvc AspNetMvc theme automation crud</tags>
     <releaseNotes>
+      ## 1.1.0.3
+      ### Features
+      * Updating Index View cshtml to work with new ViewModel definition.
+
       ## 1.1.0.2
       ### Features
       * Updating requirement for new version of ViewBuilding library.
@@ -57,7 +61,7 @@
       <group targetFramework="net40">
         <dependency id="Psns.Common.Configuration" version="" />
         <dependency id="Psns.Common.Javascript.Yui3" version="" />
-        <dependency id="Psns.Common.Mvc.ViewBuilding" version="2.0.0.0" />
+        <dependency id="Psns.Common.Mvc.ViewBuilding" version="3.0.0.0" />
         <dependency id="Psns.Common.Persistence.Definitions" version="1.0.3.0" />
         <dependency id="Psns.Common.Web.Adapters" version="1.0.0.2" />
         <dependency id="Microsoft.AspNet.Web.Optimization" version="1.1.3" />

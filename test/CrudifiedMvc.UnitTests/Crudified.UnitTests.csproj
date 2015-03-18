@@ -60,8 +60,9 @@
     <Reference Include="Psns.Common.Configuration">
       <HintPath>..\..\packages\Psns.Common.Configuration.1.0.0.1\lib\net40\Psns.Common.Configuration.dll</HintPath>
     </Reference>
-    <Reference Include="Psns.Common.Mvc.ViewBuilding">
-      <HintPath>..\..\packages\Psns.Common.Mvc.ViewBuilding.2.0.0.0\lib\net40\Psns.Common.Mvc.ViewBuilding.dll</HintPath>
+    <Reference Include="Psns.Common.Mvc.ViewBuilding, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Psns.Common.Mvc.ViewBuilding.3.0.0-rc1\lib\net40\Psns.Common.Mvc.ViewBuilding.dll</HintPath>
     </Reference>
     <Reference Include="Psns.Common.Persistence.Definitions, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -70,8 +71,9 @@
     <Reference Include="Psns.Common.Test.BehaviorDrivenDevelopment">
       <HintPath>..\..\packages\Psns.Common.Test.BehaviorDrivenDevelopment.1.0.0.12122\lib\net40\Psns.Common.Test.BehaviorDrivenDevelopment.dll</HintPath>
     </Reference>
-    <Reference Include="Psns.Common.Web.Adapters">
-      <HintPath>..\..\packages\Psns.Common.Web.Adapters.1.0.0.2\lib\net40\Psns.Common.Web.Adapters.dll</HintPath>
+    <Reference Include="Psns.Common.Web.Adapters, Version=1.0.0.4, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Psns.Common.Web.Adapters.1.0.0.4\lib\net40\Psns.Common.Web.Adapters.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
