@@ -59,9 +59,9 @@
     <Reference Include="Psns.Common.Configuration">
       <HintPath>..\..\packages\Psns.Common.Configuration.1.0.0.1\lib\net40\Psns.Common.Configuration.dll</HintPath>
     </Reference>
-    <Reference Include="Psns.Common.Mvc.ViewBuilding, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Psns.Common.Mvc.ViewBuilding, Version=4.3.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Psns.Common.Mvc.ViewBuilding.4.1.0-rc2\lib\net40\Psns.Common.Mvc.ViewBuilding.dll</HintPath>
+      <HintPath>..\..\packages\Psns.Common.Mvc.ViewBuilding.4.3.0.0\lib\net40\Psns.Common.Mvc.ViewBuilding.dll</HintPath>
     </Reference>
     <Reference Include="Psns.Common.Persistence.Definitions, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -79,7 +79,7 @@
       <HintPath>..\..\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.Client.4.0.30506.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http.WebRequest, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
@@ -124,6 +124,10 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\WebActivatorEx.2.0.6\lib\net40\WebActivatorEx.dll</HintPath>
+    </Reference>
     <Reference Include="WebGrease, Version=1.5.2.14234, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
@@ -131,12 +135,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Infrastructure\BundleConfig.cs" />
-    <Compile Include="Controllers\IndexController.cs" />
     <Compile Include="Controllers\IndexViewController.cs" />
     <Compile Include="Helpers\HtmlExtensions.cs" />
     <Compile Include="Infrastructure\CrudifiedNinjectModule.cs" />
     <Compile Include="Infrastructure\RouteConfig.cs" />
-    <Compile Include="Infrastructure\WebApiConfig.cs" />
     <Compile Include="BaseViewPage.cs" />
     <Compile Include="ModelBinders\CollectionPropertyModelBinder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

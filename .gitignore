@@ -3,6 +3,7 @@
 
 # Project Specific
 yui*/
+src/CrudifiedMvc.View/App_Data/*.ldf
 
 # User-specific files
 *.suo
