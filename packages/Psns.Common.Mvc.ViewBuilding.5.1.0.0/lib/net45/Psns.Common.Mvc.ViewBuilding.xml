@@ -4,6 +4,16 @@
         <name>Psns.Common.Mvc.ViewBuilding</name>
     </assembly>
     <members>
+        <member name="T:Psns.Common.Mvc.ViewBuilding.Adapters.RequestContextAdapter">
+            <summary>
+            An adapter for the HttpContext.Current.Request.RequestContext to assist with testing
+            </summary>
+        </member>
+        <member name="P:Psns.Common.Mvc.ViewBuilding.Adapters.RequestContextAdapter.Context">
+            <summary>
+            Unless explicitly set, HttpContext.Current.Request.RequestContext is returned
+            </summary>
+        </member>
         <member name="T:Psns.Common.Mvc.ViewBuilding.Attributes.InputPropertyType">
             <summary>
             Represents types of properties that will be displayed on an update view
@@ -132,6 +142,24 @@
             <param name="visitors">Any IFilterOptionVisitors to be passed to the ViewBuilder</param>
             <returns></returns>
         </member>
+        <member name="T:Psns.Common.Mvc.ViewBuilding.Controllers.IndexController">
+            <summary>
+            An Api controller for the Index view
+            </summary>
+        </member>
+        <member name="M:Psns.Common.Mvc.ViewBuilding.Controllers.IndexController.#ctor(Psns.Common.Mvc.ViewBuilding.ViewBuilders.ICrudViewBuilder)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="viewBuilder">The viewBuilder to retrieve the view models from</param>
+        </member>
+        <member name="M:Psns.Common.Mvc.ViewBuilding.Controllers.IndexController.GetFilterOptions(System.String)">
+            <summary>
+            Returns the options used to populate the filter drop downs on the Index view
+            </summary>
+            <param name="modelName">The Fully Qualified Assembly Name of the class whose properties are used in the Index View</param>
+            <returns>A collection of FilterOption objects</returns>
+        </member>
         <member name="M:Psns.Common.Mvc.ViewBuilding.ViewBuilders.CrudViewBuilder.GetIndexFilterOptions``1(Psns.Common.Mvc.ViewBuilding.ViewModels.IFilterOptionVisitor[])">
             <summary>
             Used to populate the index view filter menus. If an IFilterOptionsVisitor sets an item to null,
@@ -167,27 +195,6 @@
             <summary>
             The Name of the INameable
             </summary>
-        </member>
-        <member name="T:Psns.Common.Mvc.ViewBuilding.Adapters.RequestContextAdapter">
-            <summary>
-            An adapter for the HttpContext.Current.Request.RequestContext to assist with testing
-            </summary>
-        </member>
-        <member name="P:Psns.Common.Mvc.ViewBuilding.Adapters.RequestContextAdapter.Context">
-            <summary>
-            Unless explicitly set, HttpContext.Current.Request.RequestContext is returned
-            </summary>
-        </member>
-        <member name="T:Psns.Common.Mvc.ViewBuilding.ViewModels.DetailsView">
-            <summary>
-            A View with a Table that is used for a typical details view page
-            </summary>
-        </member>
-        <member name="M:Psns.Common.Mvc.ViewBuilding.ViewModels.DetailsView.Accept(Psns.Common.Mvc.ViewBuilding.ViewModels.IDetailsViewVisitor)">
-            <summary>
-            Accept an IDetailsViewVisitor and pass it this
-            </summary>
-            <param name="visitor">IDetailsViewVisitor</param>
         </member>
         <member name="T:Psns.Common.Mvc.ViewBuilding.ViewModels.IDetailsViewVisitor">
             <summary>
@@ -230,6 +237,22 @@
             <param name="item">The item to visit</param>
             <returns>Returns a potentially modified version of item</returns>
         </member>
+        <member name="P:Psns.Common.Mvc.ViewBuilding.ViewModels.IVisitable.Source">
+            <summary>
+            The object from which the element was built
+            </summary>
+        </member>
+        <member name="T:Psns.Common.Mvc.ViewBuilding.ViewModels.DetailsView">
+            <summary>
+            A View with a Table that is used for a typical details view page
+            </summary>
+        </member>
+        <member name="M:Psns.Common.Mvc.ViewBuilding.ViewModels.DetailsView.Accept(Psns.Common.Mvc.ViewBuilding.ViewModels.IDetailsViewVisitor)">
+            <summary>
+            Accept an IDetailsViewVisitor and pass it this
+            </summary>
+            <param name="visitor">IDetailsViewVisitor</param>
+        </member>
         <member name="T:Psns.Common.Mvc.ViewBuilding.ViewModels.IIndexViewVisitor">
             <summary>
             Defines a visitor for the IndexView model
@@ -261,11 +284,6 @@
         <member name="P:Psns.Common.Mvc.ViewBuilding.ViewModels.IndexView.CreateButton">
             <summary>
             Represents the Create New Item button on the Index View
-            </summary>
-        </member>
-        <member name="P:Psns.Common.Mvc.ViewBuilding.ViewModels.IVisitable.Source">
-            <summary>
-            The object from which the element was built
             </summary>
         </member>
         <member name="T:Psns.Common.Mvc.ViewBuilding.Menu.GlobalMenu">
