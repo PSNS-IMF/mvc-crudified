@@ -4,16 +4,6 @@
         <name>Psns.Common.Mvc.ViewBuilding</name>
     </assembly>
     <members>
-        <member name="M:Psns.Common.Mvc.ViewBuilding.App_Start.ViewBuildingActivator.Start">
-            <summary>
-            Starts the application
-            </summary>
-        </member>
-        <member name="M:Psns.Common.Mvc.ViewBuilding.App_Start.ViewBuildingActivator.Stop">
-            <summary>
-            Stops the application.
-            </summary>
-        </member>
         <member name="T:Psns.Common.Mvc.ViewBuilding.Attributes.InputPropertyType">
             <summary>
             Represents types of properties that will be displayed on an update view
