@@ -137,7 +137,6 @@
     <Compile Include="Infrastructure\BundleConfig.cs" />
     <Compile Include="Controllers\IndexViewController.cs" />
     <Compile Include="Helpers\HtmlExtensions.cs" />
-    <Compile Include="Infrastructure\CrudifiedNinjectModule.cs" />
     <Compile Include="Infrastructure\RouteConfig.cs" />
     <Compile Include="BaseViewPage.cs" />
     <Compile Include="ModelBinders\CollectionPropertyModelBinder.cs" />

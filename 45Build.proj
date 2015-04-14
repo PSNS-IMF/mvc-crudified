@@ -118,7 +118,6 @@
     <Compile Include="src\$(FolderName)\Controllers\IndexViewController.cs" />
     <Compile Include="src\$(FolderName)\Helpers\HtmlExtensions.cs" />
     <Compile Include="src\$(FolderName)\Infrastructure\BundleConfig.cs" />
-    <Compile Include="src\$(FolderName)\Infrastructure\CrudifiedNinjectModule.cs" />
     <Compile Include="src\$(FolderName)\Infrastructure\RouteConfig.cs" />
     <Compile Include="src\$(FolderName)\BaseViewPage.cs" />
     <Compile Include="src\$(FolderName)\ModelBinders\CollectionPropertyModelBinder.cs" />

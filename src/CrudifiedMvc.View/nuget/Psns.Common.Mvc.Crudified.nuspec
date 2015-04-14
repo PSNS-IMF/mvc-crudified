@@ -11,6 +11,10 @@
     <licenseUrl>https://github.com/PSNS-IMF/mvc-crudified/blob/master/LICENSE.md</licenseUrl>
     <tags>PSNS mvc4 mvc5 asp.net mvc AspNetMvc theme automation crud</tags>
     <releaseNotes>
+      ## 2.3.0.0
+      ### Features
+      * Moving Ninject module to the ViewBuilding module.
+
       ## 2.2.0.1
       ### Features
       * Needed to add dependency back for ViewBuilding module.
