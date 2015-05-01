@@ -59,9 +59,9 @@
     <Reference Include="Psns.Common.Configuration">
       <HintPath>..\..\packages\Psns.Common.Configuration.1.0.0.1\lib\net40\Psns.Common.Configuration.dll</HintPath>
     </Reference>
-    <Reference Include="Psns.Common.Mvc.ViewBuilding, Version=5.1.1.1, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Psns.Common.Mvc.ViewBuilding, Version=7.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Psns.Common.Mvc.ViewBuilding.5.1.1.1\lib\net40\Psns.Common.Mvc.ViewBuilding.dll</HintPath>
+      <HintPath>..\..\packages\Psns.Common.Mvc.ViewBuilding.7.0.0.0\lib\net40\Psns.Common.Mvc.ViewBuilding.dll</HintPath>
     </Reference>
     <Reference Include="Psns.Common.Persistence.Definitions, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -137,7 +137,6 @@
     <Compile Include="Infrastructure\BundleConfig.cs" />
     <Compile Include="Controllers\IndexViewController.cs" />
     <Compile Include="Helpers\HtmlExtensions.cs" />
-    <Compile Include="Infrastructure\CrudifiedNinjectModule.cs" />
     <Compile Include="Infrastructure\RouteConfig.cs" />
     <Compile Include="BaseViewPage.cs" />
     <Compile Include="ModelBinders\CollectionPropertyModelBinder.cs" />
