@@ -52,7 +52,7 @@
       <HintPath>packages\Psns.Common.Configuration.1.0.0.1\lib\net45\Psns.Common.Configuration.dll</HintPath>
     </Reference>
     <Reference Include="Psns.Common.Mvc.ViewBuilding">
-      <HintPath>packages\Psns.Common.Mvc.ViewBuilding.7.0.0\lib\net45\Psns.Common.Mvc.ViewBuilding.dll</HintPath>
+      <HintPath>packages\Psns.Common.Mvc.ViewBuilding.7.0.0.0\lib\net45\Psns.Common.Mvc.ViewBuilding.dll</HintPath>
     </Reference>
     <Reference Include="Psns.Common.Persistence.Definitions">
       <HintPath>packages\Psns.Common.Persistence.Definitions.1.0.3.0\lib\net45\Psns.Common.Persistence.Definitions.dll</HintPath>
